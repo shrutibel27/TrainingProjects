@@ -10,11 +10,11 @@
         <h2>Restaurant List</h2>
         <button (click)="addrestro()">Add Restaurant</button>
         <ul>
-          <li *ngFor="let restaurant of restaurants">
-            <h3>{{ restaurant.name }}</h3>
-            <p>Location: {{ restaurant.location }}</p>
-            <p>Type: {{ restaurant.type }}</p>
-            <button (click)="removerestro(restaurant.id)">Remove Restaurant</button>
+          <li *ngFor="let restro of restaurants">
+            <h3>{{ restro.name }}</h3>
+            <p>Location: {{ restro.location }}</p>
+            <p>Type: {{ restro.type }}</p>
+            <button (click)="removerestro(restro.id)">Remove Restaurant</button>
           </li>
         </ul>
       </div>

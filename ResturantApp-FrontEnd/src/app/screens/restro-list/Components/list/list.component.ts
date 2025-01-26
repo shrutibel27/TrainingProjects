@@ -1,14 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import { RestaurantService } from 'src/app/services/restaurant.service';
 @Component({
   selector: 'app-list',
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.css']
 })
 export class ListComponent {
-  restaurants:any[]=[];
-  constructor(private restaurantService: RestaurantService){
-    this.restaurants = this.restaurantService.getrestro();
+  restaurants:any[]=[
+      {id:1,name:'gokul',location:'kondhwa',type:'veg'},
+      {id:2,name:'kanha',location:'kondhwa',type:'veg'},
+      {id:3,name:'abhishek',location:'baramati',type:'veg/non-veg'},
+      {id:4,name:'govinda',location:'kondhwa',type:'veg'}
+  ];
+  constructor(){
+    
   }
 
 
