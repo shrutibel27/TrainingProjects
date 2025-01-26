@@ -1,1 +1,29 @@
-<p>list works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h2>Restaurant List</h2>
+        <button (click)="addrestro()">Add Restaurant</button>
+        <ul>
+          <li *ngFor="let restaurant of restaurants">
+            <h3>{{ restaurant.name }}</h3>
+            <p>Location: {{ restaurant.location }}</p>
+            <p>Type: {{ restaurant.type }}</p>
+            <button (click)="removerestro(restaurant.id)">Remove Restaurant</button>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        
+    
+      </div>
+      
+      
+</body>
+</html>
