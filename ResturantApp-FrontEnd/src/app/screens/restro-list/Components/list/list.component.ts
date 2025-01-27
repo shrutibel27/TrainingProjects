@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list.component.css']
 })
 export class ListComponent {
-  restaurants:any[]=[
+  restaurants=[
       {id:1,name:'gokul',location:'kondhwa',type:'veg'},
       {id:2,name:'kanha',location:'kondhwa',type:'veg'},
       {id:3,name:'abhishek',location:'baramati',type:'veg/non-veg'},

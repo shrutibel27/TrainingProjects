@@ -5,10 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RestroListModule } from './screens/restro-list/restro-list.module';
 import { RestroFormModule } from './screens/restro-form/restro-form.module';
+import { TestComponent } from './components/test/test.component';
+import { TestRestroModule } from './screens/test-restro/test-restro.module';
 
 @NgModule({
   declarations: [
-    AppComponent    
+    AppComponent,
+    TestComponent  
   ],
   imports: [
     BrowserModule,
@@ -16,6 +19,7 @@ import { RestroFormModule } from './screens/restro-form/restro-form.module';
     RestroListModule,
     RestroFormModule
   ],
+  exports:[TestComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { NavComponent } from './screens/restro-list/Components/nav/nav.component';
 import { AppComponent } from './app.component';
+import { RestroComponent } from './screens/test-restro/restro/restro.component';
 
 const routes: Routes = [
   {
@@ -18,6 +18,16 @@ const routes: Routes = [
     path:'abc',
     component: AppComponent
   },
+  // {
+  //   path:'test',
+  //   loadChildren:()=>
+  //   import('./screens/test-restro/test-restro.module').then((m)=>m.TestRestroModule),
+  // }
+
+  {
+    path:'test',
+    component:RestroComponent
+  }
 ];
 
 @NgModule({
